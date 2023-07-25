@@ -1,3 +1,8 @@
+''' I Changed the name of the command at line 547 now 549
+    from "guild_join_request" to "guild_request"
+
+'''
+
 import discord
 import random
 import asyncio
@@ -541,7 +546,7 @@ join_requests = {}  # Dictionary to store join requests (guild_id: {user_id: use
 
 
 @bot.command()
-async def guild_join_request(ctx, guild_name: str):
+async def guild_request(ctx, guild_name: str):
     # Check if the user already has a profile
     if ctx.author.id not in user_profiles:
         await ctx.send("You need to create a profile first using the /create_profile command.")
